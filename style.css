@@ -13,6 +13,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-image: url("/assets/galaxy.jpg");
+    background-size: cover;
 }
 
 
@@ -23,6 +24,7 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
+    height: 20%;
 
 }
 
@@ -33,6 +35,7 @@ header>nav>ul>li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 2vh;
 }
 
 
@@ -44,9 +47,27 @@ header>nav>ul>li {
     height: auto;
 }
 
-h1 {
-    font-family: "baskervvillePolice";
+#earth:hover {
+    animation: rotation 2s infinite linear;
+}
+
+#mercury:hover,
+#moon:hover,
+#venus:hover,
+#iss:hover {
+    filter: drop-shadow(1vw 1vh 1vh gold)
+}
+
+.h1Home {
+    margin: 3vh 0 0 5vw;
+    z-index: 1;
+}
+
+main>h1 {
+    font-family: 'baskervvillePolice';
     color: #ECECEC;
+    font-size: 10vw;
+    width: 70vw;
 }
 
 h2 {
@@ -55,19 +76,109 @@ h2 {
     color: #ECECEC;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 80vh;
+    ;
+
+}
 
 .galleryDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
-    width: 40vw;
+    width: 45vw;
+    margin: 3vh 0 0 5vw;
 }
 
-.pesquetDiv {
-    width: 100vw;
-    height: 80vh;
-    box-sizing: border-box;
-    overflow: hidden;
+#iss {
+    width: 100%;
+    height: auto;
 
+}
+
+
+.pesquetImage {
+    width: auto;
+    height: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translate(7vh);
+}
+
+.gallery {
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2vh;
+    ;
+}
+
+.gallery>h1 {
+    width: 100vw;
+    text-align: center;
+    margin: 2vh;
+}
+
+.gallery>.divImageGallery {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divImageGallery>img {
+    height: calc(70vh/3);
+    width: auto;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#hiddenImage {
+    display: none;
+}
+
+@media screen and (min-width:414px) {
+    .pesquetImage {
+        left: 45%;
+        transform: translate(0);
+
+    }
+
+
+    .gallery>.divImageGallery {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    #hiddenImage {
+        display: initial;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .pesquetImage {
+        transform: translate(20vh);
+    }
 }
