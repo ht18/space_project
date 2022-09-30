@@ -1,0 +1,147 @@
+*{
+    overflow:scroll ;
+}
+@font-face {
+    font-family: "baskervvillePolice";
+    src: url("/baskervville/Baskervville-Regular.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/galaxy.jpg");
+    background-size: cover;
+}
+
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    height: 20%;
+
+}
+
+
+header>nav>ul>li {
+    text-align: center;
+    width: calc(100vw/4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+
+#mercury,
+#venus,
+#earth,
+#moon {
+    width: 10vh;
+    height: auto;
+}
+
+#earth:hover {
+    animation: rotation 2s infinite linear;
+}
+
+#mercury:hover,
+#moon:hover,
+#venus:hover,
+#iss:hover {
+    filter: drop-shadow(1vw 1vh 1vh gold)
+}
+.h1Home {
+    margin: 3vh 0 0 5vw;
+    z-index: 1;
+}
+
+main>h1 {
+    font-family: 'baskervvillePolice';
+    color: #ECECEC;
+    font-size: 10vw;
+    width: 70vw;
+}
+
+h2 {
+    font-family: 'baskervvillePolice';
+    font-size: small;
+    color: #ECECEC;
+}
+.h1titre {
+    font-size: xx-large;
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     display: flex;
+    justify-content: center;
+    margin: 6vh 6vh 4vh 4vw;
+ }
+ 
+ .ingenieur {
+     margin: 0 6vh 4vh 15vw;
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     text-decoration: underline;
+ }
+ 
+ main>div>p {
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     font-size:large;
+     text-align: justify;
+     padding: 0 5em 0;
+     word-spacing: 4px;
+ }
+ 
+ .pilote {
+     margin: 4vh 6vh 4vh 15vw;
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     text-decoration: underline;
+ }
+ 
+ .partie2 {
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+ 
+ }
+ 
+ .h1training {
+     font-size: xx-large;
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     display: flex;
+    justify-content: center;
+    margin: 6vh 6vh 4vh 4vw;
+ }
+ 
+ 
+ .partie2 p {
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     font-size:large;
+     text-align: justify;
+     padding: 0 5em 0;
+     word-spacing: 4px;
+ }
+ 
+ .partie2 h3 {
+     font-family: 'baskervvillePolice';
+     color: #ECECEC;
+     font-size:large;
+     text-align: justify;
+     padding: 0 6em 0;
+     word-spacing: 4px;
+     text-decoration: underline;
+     margin: 4vh 6vh 4vh 15vw;
+    
+ }
