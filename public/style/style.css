@@ -1,6 +1,6 @@
 @font-face {
     font-family: "baskervvillePolice";
-    src: url("/baskervville/Baskervville-Regular.otf");
+    src: url("/public/assets/font/Baskervville-Regular.otf");
 }
 
 * {
@@ -12,7 +12,7 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url("/assets/galaxy.jpg");
+    background-image: url("/public/assets/galaxy.jpg");
     background-size: cover;
 }
 
@@ -31,7 +31,6 @@ ul {
 
 header>nav>ul>li {
     text-align: center;
-    width: calc(100vw/4);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,9 +106,8 @@ main {
     height: 80%;
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: -9vw;
     overflow: hidden;
-    transform: translate(7vh);
 }
 
 .gallery {
@@ -158,8 +156,12 @@ main {
 
 @media screen and (min-width:414px) {
     .pesquetImage {
-        left: 45%;
-        transform: translate(0);
+        height: 85%;
+    }
+
+    main>h1 {
+        font-size: 8vw;
+        width: 50%;
 
     }
 
@@ -178,7 +180,17 @@ main {
 }
 
 @media screen and (min-width:768px) {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header>nav>ul>li {
+        width: 20vw;
+    }
+
     .pesquetImage {
-        transform: translate(20vh);
+        height: 95%;
+        right: -5vw;
     }
 }
