@@ -40,19 +40,48 @@
     <main class="contact">
         <h1 class="h1formulaire">Contact</h1>
         <section class="Contact">
-            <img src="/assets/contact.jpg" title="banner" alt="banner" />
+            <img src="/public/assets/contact.jpg" title="banner" alt="banner" />
         </section>
 
-        <form>
-            <input type="text" placeholder="Name" />
-  
-            <input type="email" placeholder="@ mails" />
-  
-            <input type="text" placeholder="&#8962 password" />
-  
-            <input type="textarea" placeholder="Your message"/>
-            <button id="submit-btn" type="submit" value="Submit">Submit</button>
-        </form>
+        <form action="form.php" method="POST">
+            <label for="firstname">Name :</label>
+            <input
+              id="firstname"
+              type="text"
+              name="name"
+              placeholder="Entrez votre nom"
+              minlength="3"
+            /><br />
+      
+            <label for="email">Email: </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Entrer votre Email"
+              required
+            /><br />
+            <label for="password">Password: </label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Entrer votre mot de passe"
+              required
+            /><br />
+            <label for="textarea">Textarea: </label>
+            <input
+              id="textarea"
+              type="textarea"
+              name="textarea"
+              placeholder="Votre message"
+              maxlength="30"
+            /><br />
+            <input class="button" type="submit" value="Submit" />
+            <button class="button" id="submit-btn" type="submit" value="Submit">Submit</button>
+          </form>
+            
+        
     
     </main>
 

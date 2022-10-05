@@ -69,6 +69,10 @@ main>h1 {
     width: 70vw;
 }
 
+.contact>h1{
+    text-align: center;
+    margin-top: 3vh;
+}
 h2 {
     font-family: 'baskervvillePolice';
     font-size: small;
@@ -80,8 +84,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     overflow: hidden;
-    height: 80vh;
-    ;
+    height: 80%;
 
 }
 
@@ -139,6 +142,57 @@ main {
     height: calc(70vh/3);
     width: auto;
 }
+
+/*  CSS formulaire*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:80%;
+    width:100%;
+}
+.Contact>img{
+    max-height: 20vh;
+    width: auto;
+    margin-top: 5vh;
+
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    width: 100%;
+    height:48vh;
+
+}
+form>h2 {
+    margin-top: 20%;
+    text-align: left;
+  }
+  
+  
+  input {
+    width: 30vh;
+    height: 5vh;
+     
+     }
+
+#textarea {
+    height: 15vh;
+}
+
+  
+.button{
+    background-color: #283b63;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 3vh;
+  }
 
 @keyframes rotation {
     from {
