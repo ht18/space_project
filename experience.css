@@ -65,112 +65,21 @@ header>nav>ul>li {
     z-index: 1;
 }
 
-main>h1 {
-    font-family: 'baskervvillePolice';
-    color: #ECECEC;
-    font-size: 10vw;
-    width: 70vw;
-}
+/* Début body */ 
 
-h2 {
-    font-family: 'baskervvillePolice';
-    font-size: small;
-    color: #ECECEC;
-}
-.h1titre {
-    font-size: xx-large;
-     font-family: 'baskervvillePolice';
-     color: #ECECEC;
-     display: flex;
-    justify-content: center;
-    margin: 6vh 6vh 4vh 4vw;
- }
- 
- .thomas {
-    float: right;
-    margin-left: 10px;
-    margin-right: 10em;
-    
 
- }
 
- .ingenieur {
-     margin: 0 6vh 4vh 15vw;
-     font-family: 'baskervvillePolice';
-     color: #ECECEC;
-     text-decoration: underline;
- }
- 
-  .partie1  {
-     font-family: 'baskervvillePolice';
-     color: #ECECEC;
-     font-size:large;
-     text-align: justify;
-     word-spacing: 4px;
-     display: flex;
-     flex-direction: column;
-     align-content: space-between;
-     margin-left: 20px;
-     margin-right: 5em;
-    
-     
-     
- }
- 
- .pilote {
-     margin: 0vh 6vh 4vh 15vw;
-     font-family: 'baskervvillePolice';
-     color: #ECECEC;
-     text-decoration: underline;
-     
- }
- .partie2 {
-    font-family: 'baskervvillePolice';
-     color: #ECECEC;
-     font-size:large;
-     text-align: justify;
-     word-spacing: 4px;
-     display: flex;
-     flex-direction: column;
-     float: left;
-     margin-right: 35em;
-     margin-top: -12em;
-     
- }
-
- div {
+.h1titre>h1{
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    font-family: 'baskervvillePolice';
-    color: #ECECEC;
-    font-size:large;
-    word-spacing: 4px;
-    float: right;
-    margin-right: 20em;
-    margin-left: 35em;
-    
-    
-   
- }
- .h1training {
-     font-size: xx-large;
-     font-family: 'baskervvillePolice';
-     color: #ECECEC;
-     margin-top: 2em;   
-    
- }
- 
- .partie3 h3 {
-    margin-top: 3em;
-    margin-bottom: 1em;
-    text-align: center;
-    
- }
- .af_thomas {
-    float: left;
-    margin-left: 10px;
-    margin-right: 30em;
+    justify-content: center;
+    margin-top: 2vh ;
+    color : white; 
+}
 
- }
+.bloc1 {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    text-align: justify;
+    font-size:large;
+}

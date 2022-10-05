@@ -142,6 +142,22 @@ main {
     width: auto;
 }
 
+.h1titre>h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh ;
+    color : white; 
+}
+
+.bloc1 {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    text-align: justify;
+    font-size:large;
+}
+
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
