@@ -10,8 +10,8 @@
 
 body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url("/public/assets/galaxy.jpg");
     background-size: cover;
 }
@@ -25,6 +25,7 @@ ul {
     justify-content: space-around;
     padding: 0;
     height: 20%;
+    z-index:1;
 
 }
 
@@ -75,7 +76,7 @@ h2 {
     color: #ECECEC;
 }
 
-main {
+.home {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -140,6 +141,7 @@ main {
     width: auto;
 }
 
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -193,4 +195,75 @@ main {
         height: 95%;
         right: -5vw;
     }
+}
+
+/* CSS experience.html */
+
+.h1titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh ;
+    color : white; 
+    font-size: 7vh;
+    margin-top: 2em;
+}
+
+.bloc1 {
+    display: grid;
+    grid-template-columns: 60vh 60vh;
+    justify-content: center;
+    text-align: justify;
+    font-size:large;
+    color: white;
+    margin-top: 2vh;
+}
+.thomas {
+    margin-left: 4vh;
+}
+.h1training{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh ;
+    color : white; 
+    font-size: 7vh;
+    margin-left: 2vh;
+    margin-bottom: 4vh;
+}
+
+.bloc0 {
+    overflow: scroll;
+}
+
+.etude{
+    color: white;
+    margin-right: 15vh;
+    text-align: justify;
+}
+
+.bloc2 {
+    font-size:large;
+    color: white;
+    display: grid;
+    grid-template-columns: 60vh 60vh;
+    display: flex;
+    justify-content:center;
+    margin-top: 2vh;
+    margin-right: 30vh;
+    margin-left: 20vh;
+
+}
+
+.thomas2{
+    margin-left: 12vh;
+    margin-right: 4vh;
+}
+
+@media screen and (max-width: 844px) and (min-width: 398px){
+    
+    .bloc1{
+        position: absolute;
+        
+        
+    }
+
 }
