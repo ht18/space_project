@@ -86,6 +86,7 @@ main {
 .h1Home {
     margin: 3vh 0 0 5vw;
     z-index: 1;
+    /*passe le titre au premier plan, juste devant Thomas*/
 }
 
 main>h1 {
@@ -134,6 +135,66 @@ h2 {
     /*permet de cacher la partie de l'image qui dépasse */
 }
 
+/*  CSS page contact.html*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.Contact>img {
+    max-height: 20vh;
+    width: auto;
+    margin-top: 5vh;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    width: 100%;
+    height: 50vh;
+    overflow-y: git ;
+}
+
+form>h2 {
+    margin-top: 20%;
+    text-align: left;
+}
+
+form>* {
+    font-family: 'baskervvillePolice';
+    color: #ECECEC;
+}
+
+
+input {
+    width: 50%;
+    height: 5%;
+    min-height: 4vh;
+}
+
+#textarea {
+    min-height: 20vh;
+}
+
+
+.button {
+    background-color: #283b63;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 2vh;
+}
+
+/*CSS page gallery.html */
+
 .gallery {
     width: 100vw;
     height: 80%;
@@ -162,60 +223,6 @@ h2 {
     height: calc(70vh/3);
     width: auto;
 }
-
-/*  CSS page contact.html*/
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80%;
-    width: 100%;
-}
-
-.Contact>img {
-    max-height: 20vh;
-    width: auto;
-    margin-top: 5vh;
-
-
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5vh;
-    width: 100%;
-    height: auto;
-
-}
-
-form>h2 {
-    margin-top: 20%;
-    text-align: left;
-}
-
-
-input {
-    width: 30vh;
-    height: 5%;
-}
-
-#textarea {
-    height: 15vh;
-}
-
-
-.button {
-    background-color: #283b63;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 3vh;
-}
-
-
 
 #hiddenImage {
     display: none;
@@ -262,4 +269,9 @@ input {
         height: 95%;
         right: -5vw;
     }
+
+    input {
+        width: 30%;
+    }
+
 }
