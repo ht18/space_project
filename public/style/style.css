@@ -25,7 +25,7 @@ ul {
     justify-content: space-around;
     padding: 0;
     height: 20%;
-    z-index:1;
+    z-index: 1;
 
 }
 
@@ -70,10 +70,11 @@ main>h1 {
     width: 70vw;
 }
 
-.contact>h1{
+.contact>h1 {
     text-align: center;
     margin-top: 3vh;
 }
+
 h2 {
     font-family: 'baskervvillePolice';
     font-size: small;
@@ -145,55 +146,57 @@ h2 {
 }
 
 /*  CSS formulaire*/
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:80%;
-    width:100%;
+    height: 80%;
+    width: 100%;
 }
-.Contact>img{
+
+.Contact>img {
     max-height: 20vh;
     width: auto;
     margin-top: 5vh;
 
-    
+
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top: 5vh;
     width: 100%;
-    height:48vh;
+    height: 48vh;
 
 }
+
 form>h2 {
     margin-top: 20%;
     text-align: left;
-  }
-  
-  
-  input {
+}
+
+
+input {
     width: 30vh;
     height: 5vh;
-     
-     }
+
+}
 
 #textarea {
     height: 15vh;
 }
 
-  
-.button{
+
+.button {
     background-color: #283b63;
     color: white;
     border: none;
     padding: 5px 10px;
     margin-top: 3vh;
-  }
+}
 
 
 @keyframes rotation {
@@ -235,7 +238,88 @@ form>h2 {
     }
 }
 
+
+
+/* CSS experience.html */
+
+.h1titre {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    color: white;
+    font-size: 7vh;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.bloc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-size: large;
+    color: white;
+    margin-top: 2vh;
+}
+
+
+
+.h1training {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    color: white;
+    font-size: 7vh;
+    margin-left: 2vh;
+    margin-bottom: 4vh;
+}
+
+.bloc0 {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.etude {
+    color: white;
+    margin-right: 15vh;
+    text-align: justify;
+}
+
+.bloc2 {
+    font-size: large;
+    color: white;
+    display: grid;
+    grid-template-columns: 60vh 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-right: 30vh;
+    margin-left: 20vh;
+
+}
+
+.thomas2 {
+    margin-left: 12vh;
+    margin-right: 4vh;
+}
+
 @media screen and (min-width:768px) {
+    .bloc1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .partie1 {
+        width: 45%;
+    }
+
+    .thomas {
+        width: 45%;
+        height: auto;
+        margin-left: 2vw;
+    }
+
     ul {
         display: flex;
         justify-content: flex-start;
@@ -249,75 +333,4 @@ form>h2 {
         height: 95%;
         right: -5vw;
     }
-}
-
-/* CSS experience.html */
-
-.h1titre{
-    display: flex;
-    justify-content: center;
-    margin-top: 2vh ;
-    color : white; 
-    font-size: 7vh;
-    margin-top: 2em;
-}
-
-.bloc1 {
-    display: grid;
-    grid-template-columns: 60vh 60vh;
-    justify-content: center;
-    text-align: justify;
-    font-size:large;
-    color: white;
-    margin-top: 2vh;
-}
-.thomas {
-    margin-left: 4vh;
-}
-.h1training{
-    display: flex;
-    justify-content: center;
-    margin-top: 10vh ;
-    color : white; 
-    font-size: 7vh;
-    margin-left: 2vh;
-    margin-bottom: 4vh;
-}
-
-.bloc0 {
-    overflow: scroll;
-}
-
-.etude{
-    color: white;
-    margin-right: 15vh;
-    text-align: justify;
-}
-
-.bloc2 {
-    font-size:large;
-    color: white;
-    display: grid;
-    grid-template-columns: 60vh 60vh;
-    display: flex;
-    justify-content:center;
-    margin-top: 2vh;
-    margin-right: 30vh;
-    margin-left: 20vh;
-
-}
-
-.thomas2{
-    margin-left: 12vh;
-    margin-right: 4vh;
-}
-
-@media screen and (max-width: 844px) and (min-width: 398px){
-    
-    .bloc1{
-        position: absolute;
-        
-        
-    }
-
 }
