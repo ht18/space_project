@@ -1,8 +1,11 @@
+/* Import de la police Baskerville */
 @font-face {
     font-family: "baskervvillePolice";
     src: url("/public/assets/font/Baskervville-Regular.otf");
 }
 
+/* Corps CSS pour mobile */
+/* Header et body */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,8 +49,20 @@ header>nav>ul>li {
     height: auto;
 }
 
+/*permet de créer une fonction qui fera tourner la planète Terre*/
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 #earth:hover {
     animation: rotation 2s infinite linear;
+    /*invocation de la fonction rotation définie plus tôt */
 }
 
 #mercury:hover,
@@ -55,8 +70,19 @@ header>nav>ul>li {
 #venus:hover,
 #iss:hover {
     filter: drop-shadow(1vw 1vh 1vh gold)
+        /*le filter permet d'appliquer le drop-shadow au fichier png et non à la div*/
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 80%;
+
+}
+
+/* Page index.html */
 .h1Home {
     margin: 3vh 0 0 5vw;
     z-index: 1;
@@ -69,24 +95,17 @@ main>h1 {
     width: 70vw;
 }
 
-.contact>h1{
+.contact>h1 {
     text-align: center;
     margin-top: 3vh;
 }
+
 h2 {
     font-family: 'baskervvillePolice';
     font-size: small;
     color: #ECECEC;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-    height: 80%;
-
-}
 
 .galleryDiv {
     display: flex;
@@ -110,7 +129,9 @@ main {
     position: fixed;
     bottom: 0;
     right: -9vw;
+    /*permet de positionner l'image de Thomas depuis la droite*/
     overflow: hidden;
+    /*permet de cacher la partie de l'image qui dépasse */
 }
 
 .gallery {
@@ -120,7 +141,6 @@ main {
     flex-direction: column;
     justify-content: space-around;
     margin-top: 2vh;
-    ;
 }
 
 .gallery>h1 {
@@ -143,70 +163,65 @@ main {
     width: auto;
 }
 
-/*  CSS formulaire*/
-.contact{
+/*  CSS page contact.html*/
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:80%;
-    width:100%;
+    height: 80%;
+    width: 100%;
 }
-.Contact>img{
+
+.Contact>img {
     max-height: 20vh;
     width: auto;
     margin-top: 5vh;
 
-    
+
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top: 5vh;
     width: 100%;
-    height:48vh;
+    height: auto;
 
 }
+
 form>h2 {
     margin-top: 20%;
     text-align: left;
-  }
-  
-  
-  input {
+}
+
+
+input {
     width: 30vh;
-    height: 5vh;
-     
-     }
+    height: 5%;
+}
 
 #textarea {
     height: 15vh;
 }
 
-  
-.button{
+
+.button {
     background-color: #283b63;
     color: white;
     border: none;
     padding: 5px 10px;
     margin-top: 3vh;
-  }
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
 }
+
+
 
 #hiddenImage {
     display: none;
 }
+
+/*Media Queries*/
 
 @media screen and (min-width:414px) {
     .pesquetImage {
