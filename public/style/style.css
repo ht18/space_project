@@ -206,7 +206,7 @@ form>h2 {
 input {
     width: 30vh;
     height: 5vh;
-
+}
 
 form>* {
     font-family: 'baskervvillePolice';
@@ -235,8 +235,7 @@ input {
     margin-top: 3vh;
 }
 
-    margin-top: 2vh;
-}
+
 
 
 /*CSS page gallery.html */
@@ -406,16 +405,17 @@ input {
             
             
     }
-
-}
-
-
-
-
-
     input {
         width: 30%;
     }
 
 }
+
+
+
+
+
+ 
+
+
 
