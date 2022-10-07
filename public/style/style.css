@@ -269,10 +269,6 @@ input {
     display: none;
 }
 
-/*Media Queries*/
-
-
-
 /* CSS experience.html */
 
 .h1titre,
@@ -368,6 +364,7 @@ input {
     margin-bottom: 2em;
 }
 
+/* Media Queries */
 
 @media screen and (min-width:414px) {
     .pesquetImage {
